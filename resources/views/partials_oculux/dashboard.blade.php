@@ -18,7 +18,7 @@
                     <div class="d-flex align-items-center">
                         <div class="icon-in-bg bg-azura text-white rounded-circle"><i class="fa fa-credit-card"></i></div>
                         <div class="ml-4">
-                            <span>New expense</span>
+                            <span>Expenses</span>
                             <h4 class="mb-0 font-weight-medium">₦3,651</h4>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     <div class="d-flex align-items-center">
                         <div class="icon-in-bg bg-orange text-white rounded-circle"><i class="fa fa-users"></i></div>
                         <div class="ml-4">
-                            <span>Daily Visits</span>
+                            <span>Members</span>
                             <h4 class="mb-0 font-weight-medium">5,805</h4>
                         </div>
                     </div>

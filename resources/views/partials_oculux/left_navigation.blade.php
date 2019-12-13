@@ -1,6 +1,6 @@
 <div id="left-sidebar" class="sidebar">
     <div class="navbar-brand">
-        <a href="index.html"><img src="../assets/images/icon.svg" alt="Oculux Logo" class="img-fluid logo"><span>Oculux</span></a>
+    <a href="{{ route('home') }}"><img src="{{ asset('assets/images/icon.svg')}} " alt="Kobonet" class="img-fluid logo"><span>KOBO.net</span></a>
         <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu icon-close"></i></button>
     </div>
     <div class="sidebar-scroll">
@@ -15,6 +15,7 @@
                 <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
                     <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
                     <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
+                    <li><a href="{{ route('welcome')}}"><i class="icon-envelope-open"></i>Main Site</a></li>
                     <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
                     <li class="divider"></li>
                     <li><a href="{{ route('logout') }}"

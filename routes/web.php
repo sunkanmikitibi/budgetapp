@@ -12,14 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome1');
 });
+Route::get('/', 'MainSiteController@index')->name('welcome');
 
 Auth::routes();
 
 Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('income', 'IncomeController');
+    Route::resource('savingscat', 'SavingsCategory');
 
 });
 

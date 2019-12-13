@@ -14,28 +14,28 @@
                 <div class="card-tools float-right">
                    <a href="{{ route('income.create')}}" class="btn btn-primary btn-round mb-2">
                         Add Savings
-                    </a> 
+                    </a>
                 </div>
             </div>
             <div class="card-body table-responsive">
                  <table class="table table-striped table-hover dataTable js-exportable">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
+                        <th>Title</th>
+                        <th>Member</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Income Category</th>
                         <th>Salary</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
+                        <th>Title</th>
+                        <th>Member</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Income Category</th>
                         <th>Salary</th>
                     </tr>
                 </tfoot>
@@ -51,7 +51,7 @@
                 </tbody>
             </table>
             </div>
-           
+
         </div>
     </div>
 </div>

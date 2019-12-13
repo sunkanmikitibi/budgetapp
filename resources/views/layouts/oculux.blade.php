@@ -41,7 +41,7 @@
                             </ol>
                         </nav> --}}
                     </div>
-                  
+
                 </div>
             </div>
 
@@ -52,5 +52,6 @@
 </div>
 @include('partials_oculux.scripts')
 @yield('datajs')
+@yield('datepickerscripts')
 </body>
 </html>

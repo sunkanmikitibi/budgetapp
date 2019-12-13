@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Income;
+use App\Client;
+use Session;
+use App\IncomeCategory;
 
 class IncomeController extends Controller
 {
@@ -31,7 +34,9 @@ class IncomeController extends Controller
      */
     public function create()
     {
-        return view('income.create');
+        $incomecats = IncomeCategory::all();
+        $members = Client::all();
+        return view('income.create', compact('incomecats', 'members'));
     }
 
     /**

@@ -70,7 +70,7 @@
                                         </a>
                                     @endif
                                     </span>
-                                    <span>Don't have an account? <a href="page-register.html">Register</a></span>
+                                    <span>Don't have an account? <a href="{{ route('register')}}">Register</a></span>
                                     </div>
 
                             </div>

@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class Client extends Authenticatable
 {
     protected $fillable = [
-        'firstname', 'surname', 'email', 'password',
+        'firstname', 'surname', 'email', 'address', 'mobile_number', 'password',
     ];
 
     public function incomes()

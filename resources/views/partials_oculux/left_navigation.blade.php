@@ -38,22 +38,8 @@
                 <li><a href="#"><i class="icon-rocket"></i><span>Expenses</span></a></li>
                 <li><a href="#"><i class="icon-wallet"></i><span>Accounts</span></a></li>
                 <li><a href="#"><i class="icon-wallet"></i><span>Budget</span></a></li>
-                <li><a href="#"><i class="icon-users"></i><span>Members</span></a></li>
-               {{--  <li class="active open">
-                    <a href="#Pages" class="has-arrow"><i class="icon-docs"></i><span>Pages</span></a>
-                    <ul>
-                        <li class="active"><a href="page-blank.html">Blank Page</a></li>
-                        <li><a href="page-profile.html">User Profile</a></li>
-                        <li><a href="page-user-list.html">User List</a></li>
-                        <li><a href="page-testimonials.html">Testimonials</a></li>
-                        <li><a href="page-invoices.html">Invoices</a></li>
-                        <li><a href="page-timeline.html">Timeline</a></li>
-                        <li><a href="page-search-results.html">Search Results</a></li>
-                        <li><a href="page-gallery.html">Image Gallery</a></li>
-                        <li><a href="page-pricing.html">Pricing</a></li>
-                        <li><a href="page-coming-soon.html">Coming Soon</a></li>
-                    </ul>
-                </li>--}}
+                <li><a href="{{route('member.index')}}"><i class="icon-users"></i><span>Members</span></a></li>
+
 
             </ul>
         </nav>

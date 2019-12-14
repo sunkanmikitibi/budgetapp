@@ -47,7 +47,26 @@ class IncomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title'=>'required',
+            'amount'=>'required',
+            'income_category'=>'required',
+            'member_id'=>'required',
+            'date'=>'date|required',
+            'description'=>'sometimes',
+        ]);
+
+        $savings = new Income;
+        $savings->title = $request->title;
+        $savings->amount = $request->amount;
+        $savings->income_category = $request->income_category;
+        $savings->member_id = $request->member_id;
+        $savings->date = $request->date;
+        $savings->description = $request->description;
+
+        $savings->save();
+        $request->session()->flash('success', 'Savings Added Successfully');
+        return redirect()->route('income.index');
     }
 
     /**

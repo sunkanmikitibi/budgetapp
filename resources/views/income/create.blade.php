@@ -12,6 +12,9 @@
         </div>
 
     </div>
+    <div class="col">
+        @include('partials_oculux._messages')
+    </div>
 </div>
 <div class="row">
     <div class="col-4">

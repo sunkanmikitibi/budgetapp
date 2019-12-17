@@ -16,4 +16,9 @@ class Client extends Authenticatable
         return $this->hasMany('App\Income');
     }
 
+    public function expenses()
+    {
+        return $this->hasMany('App\Expense');
+    }
+
 }

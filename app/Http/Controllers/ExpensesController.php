@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\IncomeCategory;
-use Session;
+use App\Expense;
+use App\Client;
+use App\Http\Resources\ExpenseResources;
 
-class SavingsCategory extends Controller
+class ExpensesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,8 @@ class SavingsCategory extends Controller
      */
     public function index()
     {
-        //
+        $expenses = Expense::all();
+        return view('expenses.index', compact('expenses'));
     }
 
     /**
@@ -25,7 +32,12 @@ class SavingsCategory extends Controller
      */
     public function create()
     {
-        //
+        $members = Client::all();
+        $member = [];
+        foreach($members as $memb){
+            $member[$memb->id] = $memb->firstname. ''.$memb->surname;
+        }
+        return view('expenses.create', compact('member'));
     }
 
     /**
@@ -36,16 +48,7 @@ class SavingsCategory extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name'=>'required',
-        ]);
-
-        $category = new IncomeCategory;
-        $category->name = $request->name;
-        $category->save();
-
-        return redirect()->route('income.create');
-
+        //
     }
 
     /**

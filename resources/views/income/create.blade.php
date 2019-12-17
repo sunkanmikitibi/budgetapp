@@ -80,7 +80,7 @@
                         </div>
                  <div class="col-6">
                         <div class="form-group">
-                            {!! Form::label('amount', 'Amount') !!}
+                            {!! Form::label('amount', 'Income Category') !!}
                             <select name="income_category" id="" class="form-control round">
                                 <option value="">Select Income Category</option>
                                 @foreach ($incomecats as $category)

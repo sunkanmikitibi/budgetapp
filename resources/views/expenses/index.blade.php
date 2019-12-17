@@ -6,15 +6,14 @@
 <div class="row">
     <div class="col-12">
 
-        <div class="card">
+        <div class="card card-primary">
             <div class="card-header bg-secondary">
+               All Expenses
                 <div class="card-tools float-right">
-                    <a href="{{ route('income.create')}}" class="btn btn-primary btn-round btn-sm">
-                         Add Savings
-                     </a>
-                 </div>
-                Savings
-
+                   <a href="{{ route('expenses.create')}}" class="btn btn-primary btn-round btn-sm mb-2 mt-0">
+                        Add Expenses
+                    </a>
+                </div>
             </div>
             <div class="card-body table-responsive">
                  <table class="table table-striped table-hover dataTable js-exportable">
@@ -24,7 +23,7 @@
                         <th>Member</th>
                         <th>Amount</th>
                         <th>Date</th>
-                        <th>Income Category</th>
+                        <th>Category</th>
 
                     </tr>
                 </thead>
@@ -34,19 +33,19 @@
                         <th>Member</th>
                         <th>Amount</th>
                         <th>Date</th>
-                        <th>Income Category</th>
+                        <th>Category</th>
 
                     </tr>
                 </tfoot>
 
                 <tbody>
-              @foreach ($incomes as $saving)
+              @foreach ($expenses as $expense)
               <tr>
-                <td>{{$saving->title}}</td>
-                <td>{{$saving->client->firstname}}</td>
-                <td>{{$saving->amount}}</td>
-                <td>{{$saving->date}}</td>
-                <td>{{$saving->category->name}}</td>
+                <td>{{$expense->title}}</td>
+                <td>{{$expense->client->firstname}}</td>
+                <td>{{$expense->amount}}</td>
+                <td>{{$expense->date}}</td>
+                <td>{{$expense->category->name}}</td>
 
             </tr>
                 @endforeach

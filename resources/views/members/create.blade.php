@@ -5,6 +5,12 @@
         <div class="card">
             <div class="card-header">
                 Add Member
+                <div class="card-tools float-right ">
+                    <a href="{{ route('member.index')}}" class="btn btn-round btn-info btn-sm btn-block mb-2">
+                        <i class="icon-users"></i>
+                        Back to Member List
+                    </a>
+                    </div>
             </div>
             <div class="card-body">
                 <div class="col-8 offset-2  ">

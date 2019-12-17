@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use Illuminate\Http\Request;
-use App\IncomeCategory;
-use Session;
+use App\Http\Controllers\Controller;
+use App\Income;
+use App\Http\Resources\SavingsResources;
 
-class SavingsCategory extends Controller
+class SavingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,16 +20,6 @@ class SavingsCategory extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -36,16 +27,7 @@ class SavingsCategory extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name'=>'required',
-        ]);
-
-        $category = new IncomeCategory;
-        $category->name = $request->name;
-        $category->save();
-
-        return redirect()->route('income.create');
-
+        //
     }
 
     /**
@@ -55,17 +37,6 @@ class SavingsCategory extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
     {
         //
     }

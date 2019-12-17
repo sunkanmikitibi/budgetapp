@@ -13,8 +13,8 @@
                 <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
                     <strong>{{Auth::user()->name}}</strong></a>
                 <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
-                    <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
-                    <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
+                    <li><a href="#"><i class="icon-user"></i>My Profile</a></li>
+                    <li><a href="#"><i class="icon-envelope-open"></i>Messages</a></li>
                     <li><a href="{{ route('welcome')}}"><i class="icon-envelope-open"></i>Main Site</a></li>
                     <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
                     <li class="divider"></li>
@@ -33,9 +33,9 @@
                 <li class="header">Main</li>
 
                 <li><a href="{{ route('home')}}"><i class="icon-speedometer"></i><span>Dashboard</span></a></li>
-                <li><a href="#"><i class="icon-diamond"></i><span>Transactions</span></a></li>
+                <li><a href="#"><i class="icon-credit-card"></i><span>Transactions</span></a></li>
                 <li><a href="{{ route('income.index') }}"><i class="icon-diamond"></i><span>Savings</span></a></li>
-                <li><a href="#"><i class="icon-rocket"></i><span>Expenses</span></a></li>
+                <li><a href="{{ route('expenses.index')}}"><i class="icon-rocket"></i><span>Expenses</span></a></li>
                 <li><a href="#"><i class="icon-wallet"></i><span>Accounts</span></a></li>
                 <li><a href="#"><i class="icon-wallet"></i><span>Budget</span></a></li>
                 <li><a href="{{route('member.index')}}"><i class="icon-users"></i><span>Members</span></a></li>

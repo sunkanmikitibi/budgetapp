@@ -31,6 +31,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('income', 'IncomeController');
     Route::resource('savingscat', 'SavingsCategory');
     Route::resource('member', 'ClientsController');
+    Route::resource('expenses', 'ExpensesController');
 
 });
 
